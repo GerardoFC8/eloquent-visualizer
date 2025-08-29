@@ -1,6 +1,6 @@
 {
   "name": "eloquent-visualizer",
-  "displayName": "Eloquent Visualizer",
+  "displayName": "Laravel Eloquent Visualizer",
   "description": "Visualiza las relaciones de tus modelos Eloquent en proyectos Laravel de forma interactiva.",
   "version": "1.0.0",
   "publisher": "GerardoFC8",
