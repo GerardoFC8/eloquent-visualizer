@@ -1,71 +1,67 @@
-# eloquent-visualizer README
+**Eloquent Visualizer**
 
-This is the README for your extension "eloquent-visualizer". After writing up a brief description, we recommend including the following sections.
+Visualiza las relaciones de tus modelos Eloquent en proyectos Laravel de
+forma interactiva y sencilla, directamente dentro de VS Code.
 
-## Features
+**Nota:** Reemplaza la URL de la imagen de arriba con un GIF de
+demostración real en tu repositorio.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+**¿Por qué Eloquent Visualizer?**
 
-For example if there is an image subfolder under your extension project workspace:
+Navegar por las complejas relaciones de un proyecto Laravel puede ser un
+desafío. Eloquent Visualizer te ayuda a entender la arquitectura de tu
+base de datos de un vistazo, generando un grafo interactivo de cómo se
+conectan tus modelos. ¡Ideal para desarrolladores nuevos en un proyecto
+o para documentar tu propia aplicación!
 
-\!\[feature X\]\(images/feature-x.png\)
+**Características Principales**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Detección Automática**: Escanea tu proyecto (app/ y app/Models/)
+  para encontrar todos tus modelos Eloquent automáticamente.
 
-## Requirements
+- **Visualización de Relaciones**: Muestra claramente relaciones como
+  hasOne, hasMany, belongsTo, belongsToMany, y más.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Grafo Interactivo**: Arrastra, haz zoom, y reorganiza los nodos para
+  explorar las conexiones a tu manera.
 
-## Extension Settings
+- **Navegación Rápida**: Haz doble clic en cualquier modelo del gráfico
+  para abrir el archivo PHP correspondiente al instante.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- **Análisis Enfocado**: Selecciona uno o más modelos y aíslalos para
+  centrarte en una parte específica de tu esquema.
 
-For example:
+- **Exportación a PNG**: Guarda una imagen de alta resolución de tu
+  gráfico de relaciones para documentación o para compartir con tu
+  equipo.
 
-This extension contributes the following settings:
+- **Búsqueda Integrada**: Encuentra rápidamente cualquier modelo en el
+  gráfico usando el buscador.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+**Cómo Empezar**
 
-## Known Issues
+1.  **Instala la Extensión**: Búscala como \"Eloquent Visualizer\" en el
+    Marketplace de VS Code e instálala.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+2.  **Abre tu Proyecto Laravel**: Asegúrate de tener la carpeta raíz de
+    tu proyecto Laravel abierta en VS Code.
 
-## Release Notes
+3.  **Ejecuta el Comando**: Abre la Paleta de Comandos (Ctrl+Shift+P o
+    Cmd+Shift+P) y escribe Eloquent Visualizer: Mostrar Gráfico de
+    Relaciones.
 
-Users appreciate release notes as you update your extension.
+¡Y listo! Se abrirá una nueva pestaña con el grafo interactivo de tus
+modelos.
 
-### 1.0.0
+**Requisitos**
 
-Initial release of ...
+- Visual Studio Code 1.80 o superior.
 
-### 1.0.1
+- Un proyecto basado en Laravel con modelos Eloquent.
 
-Fixed issue #.
+**Problemas Conocidos**
 
-### 1.1.0
+- El parseador de relaciones se basa en expresiones regulares y podría
+  no detectar relaciones definidas de maneras muy inusuales o dinámicas.
 
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**¡Disfruta visualizando tus modelos!**
